@@ -1,0 +1,111 @@
+.review {
+  margin-bottom: 150px;
+
+  @include on992 {
+    background: linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url("../images/review/theatre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include on768 {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    @include on768 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__container {
+    background:linear-gradient(rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)), url("../images/review/theatre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 181px 96px 126px 190px;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    gap: 103px;
+
+    @include on992 {
+      background: none;
+      gap: 58px;
+      align-items: center;
+      padding: 126px 111px 126px 191px;
+    }
+
+    @include on768 {
+      padding: 126px 99px;
+      gap: 38px;
+    }
+
+    @include on576 {
+      padding: 126px 33px; 
+    }
+
+   
+  }
+
+  &__years {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__year {
+    font-family: 'Open Sans Condensed Bold', sans-serif;
+    font-size: 72px;
+    color: $gold-color;
+
+    @include on445 {
+      font-size: 48px;
+    }
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 30px;
+
+    @include on992 {
+      margin-top: 0;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    gap: 25px;
+
+    @include on768 {
+      gap:15px;
+    }
+
+    @include on445 {
+      gap: 5px;
+    }
+  }
+
+  &__img {
+    @include on360 {
+      width: 16px;
+      height: 14px;
+    }
+  }
+
+  &__text {
+    font-size: 36px;
+    line-height: 150%;
+
+    @include on768 {
+      font-size: 29px;
+    }
+
+    @include on445 {
+      font-size: 19px;
+    }
+  }
+}

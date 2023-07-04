@@ -1,0 +1,72 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 30px;
+  
+  @include on740 {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 39px;
+    justify-content: space-between;
+
+    // @include on475 {
+    //   flex-wrap: nowrap;
+    // }
+  }
+  // align-items: center;
+
+
+  &__textarea{
+    padding: 15px;
+    max-width: 310px;
+    max-height: 100px;
+    grid-row: 1/3;
+    grid-column: 3/4;
+    outline: none;
+    background-color: $form-bg-color;
+    border: 1px solid $form-border-color;
+    color: $main-text-color;
+    // align-self: end;
+    &::placeholder {
+        color: $form-text-color;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+    @include on740 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }  
+
+  }
+
+  &__input {
+    padding: 15px;
+    max-width: 180px;
+    max-height: 35px;
+    background-color: $form-bg-color;
+    outline: none;
+    border: 1px solid $form-border-color;
+    color: $main-text-color;
+
+    &::placeholder {
+      color: $form-text-color;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    @include on740 {
+      flex-basis: 35%;
+    }
+
+    @include on475 {
+      max-width: 150px;
+    }
+
+    @include on400 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}

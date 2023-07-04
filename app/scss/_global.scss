@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Open Sans Condensed Bold', sans-serif;
+  src: url("../fonts/OpenSans_Condensed-Bold.ttf");
+}
+
+html,
+body {
+	height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: $main-bg-color;
+  color: $main-text-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  &__title {
+    font-family: 'Open Sans Condensed Bold', sans-serif;
+    font-size: 64px;
+    color: $main-text-color;
+    text-transform: uppercase;
+    text-align: center;
+    &--accent {
+      color: $gold-color;
+    }
+  }
+}
+
+.swiper2 {
+  overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+  min-height: 100%;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+
+
+
+
+

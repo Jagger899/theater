@@ -1,0 +1,63 @@
+.partners {
+  // margin-bottom: 130px;
+
+    @include on768 {
+        padding: 90px 39px;
+      }
+
+  &__container {
+    border: 1px solid red;
+
+    @include on992 {
+      max-width: 690px;
+      overflow: hidden;
+    }
+
+  
+
+    @include on576 {
+      max-width: 510px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 147px;
+
+    @include on992 {
+      font-size: 48px;
+      margin-bottom: 131px;
+    }
+
+    @include on360 {
+      font-size: 36px;
+    }
+  }
+
+  &__logos {
+   display: flex;
+   flex-direction: column;
+   gap: 139px;
+
+    @include on992 {
+      flex-wrap: nowrap;
+    }
+
+    @include on768 {
+      gap: 89px;
+    }
+  }
+
+  &__logos-top {
+    display: flex;
+    
+    gap: 26px;
+    align-items: center;
+  }
+
+  &__logos-bottom {
+    display: flex;
+    
+    gap: 26px;
+    align-items: center;
+  }
+}

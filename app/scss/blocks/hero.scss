@@ -1,0 +1,13 @@
+.hero {
+  background-image: url("../images/promo/bg3.jpg");
+  background-repeat: no-repeat;
+  
+  &__promo {
+    display: flex;
+  }
+
+  &__sidebar {
+    margin-bottom: 200px;
+    position: absolute;
+  }
+}
