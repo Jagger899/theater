@@ -6,8 +6,6 @@
       }
 
   &__container {
-    border: 1px solid red;
-
     @include on992 {
       max-width: 690px;
       overflow: hidden;
